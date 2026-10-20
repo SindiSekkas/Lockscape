@@ -1,0 +1,60 @@
+# XcodeGen spec. Regenerate Lockscape.xcodeproj with `xcodegen generate` after editing.
+name: Lockscape
+options:
+  bundleIdPrefix: com.sindisekkas
+  deploymentTarget:
+    macOS: "14.0"
+  createIntermediateGroups: true
+
+settings:
+  base:
+    SWIFT_VERSION: "5"
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    CODE_SIGN_STYLE: Automatic
+    CODE_SIGN_IDENTITY: "-"   # ad-hoc; pick your team in Xcode to sign for distribution
+    DEVELOPMENT_TEAM: ""
+
+targets:
+  Lockscape:
+    type: application
+    platform: macOS
+    sources:
+      - path: Lockscape
+        excludes:
+          - AppIcon.icon
+      - path: Lockscape/AppIcon.icon
+        type: file
+        buildPhase: resources
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.sindisekkas.lockscape
+        INFOPLIST_FILE: Lockscape/Info.plist
+        GENERATE_INFOPLIST_FILE: false
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ENABLE_HARDENED_RUNTIME: true
+
+  LockscapeTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources:
+      - path: LockscapeTests
+    dependencies:
+      - target: Lockscape
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.sindisekkas.lockscape.tests
+        GENERATE_INFOPLIST_FILE: true
+
+schemes:
+  Lockscape:
+    build:
+      targets:
+        Lockscape: all
+        LockscapeTests: [test]
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets:
+        - LockscapeTests

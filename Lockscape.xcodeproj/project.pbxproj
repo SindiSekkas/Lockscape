@@ -1,0 +1,446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		054A990F49A63E70418189DE /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = 92B12C89EC99F21B55E797FF /* AppIcon.icon */; };
+		6246C8BF0328D17EEBBCB48E /* LockWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC529BDFBD63C5A9D7356D0 /* LockWatcher.swift */; };
+		8A7347BE2B3B27329C38B571 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1136463C1BAF8B2AED40394 /* Settings.swift */; };
+		915DE075634BD4FF6AB13C2C /* WallpaperSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E901BD1492F85F3103A7E9 /* WallpaperSystem.swift */; };
+		98EDAADDB232CA6750487301 /* WallpaperSwapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A308CFEB33C15F51700827 /* WallpaperSwapperTests.swift */; };
+		9D567E2E89505144FE5B41F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 630E9D84B3C82D97926935E8 /* Assets.xcassets */; };
+		A098ED438D18D9A37A3D2B00 /* WallpaperSwapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C737E3638333CA9DD5782995 /* WallpaperSwapper.swift */; };
+		A317B11420C96186C8498EA9 /* StatusMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BF4EC3F1B07CB43322D57B /* StatusMenu.swift */; };
+		CDF450C35DC76993105F251A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CD0C12651BFCD1F0861215 /* main.swift */; };
+		E0E1A3724EE8003C26ED25D9 /* LoginItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73329ECE23558A03103AB661 /* LoginItem.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		208EEF5491F8C93FF4E382B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82664908EA57F97C20E336DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7DEB23B86BED21A3532783E7;
+			remoteInfo = Lockscape;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07AEFFCCC84258FA13FF3573 /* Lockscape.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lockscape.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FC529BDFBD63C5A9D7356D0 /* LockWatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockWatcher.swift; sourceTree = "<group>"; };
+		53BF4EC3F1B07CB43322D57B /* StatusMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenu.swift; sourceTree = "<group>"; };
+		630E9D84B3C82D97926935E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		64A308CFEB33C15F51700827 /* WallpaperSwapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperSwapperTests.swift; sourceTree = "<group>"; };
+		73329ECE23558A03103AB661 /* LoginItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginItem.swift; sourceTree = "<group>"; };
+		92B12C89EC99F21B55E797FF /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = wrapper.icon; path = AppIcon.icon; sourceTree = "<group>"; };
+		92CD0C12651BFCD1F0861215 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A40DD29F30FCBA152262F304 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A4E901BD1492F85F3103A7E9 /* WallpaperSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperSystem.swift; sourceTree = "<group>"; };
+		C1136463C1BAF8B2AED40394 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		C737E3638333CA9DD5782995 /* WallpaperSwapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperSwapper.swift; sourceTree = "<group>"; };
+		F5C4DCEE20C9E343907EA1E9 /* LockscapeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LockscapeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		AF4D36EE9894A1582F76CFE6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07AEFFCCC84258FA13FF3573 /* Lockscape.app */,
+				F5C4DCEE20C9E343907EA1E9 /* LockscapeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B25590A7FA44B8FF24002EA9 /* LockscapeTests */ = {
+			isa = PBXGroup;
+			children = (
+				64A308CFEB33C15F51700827 /* WallpaperSwapperTests.swift */,
+			);
+			path = LockscapeTests;
+			sourceTree = "<group>";
+		};
+		D9B5702CEB69C57B4D2109B5 /* Lockscape */ = {
+			isa = PBXGroup;
+			children = (
+				92B12C89EC99F21B55E797FF /* AppIcon.icon */,
+				630E9D84B3C82D97926935E8 /* Assets.xcassets */,
+				A40DD29F30FCBA152262F304 /* Info.plist */,
+				2FC529BDFBD63C5A9D7356D0 /* LockWatcher.swift */,
+				73329ECE23558A03103AB661 /* LoginItem.swift */,
+				92CD0C12651BFCD1F0861215 /* main.swift */,
+				C1136463C1BAF8B2AED40394 /* Settings.swift */,
+				53BF4EC3F1B07CB43322D57B /* StatusMenu.swift */,
+				C737E3638333CA9DD5782995 /* WallpaperSwapper.swift */,
+				A4E901BD1492F85F3103A7E9 /* WallpaperSystem.swift */,
+			);
+			path = Lockscape;
+			sourceTree = "<group>";
+		};
+		FBCB26CAD404AFDE57714602 = {
+			isa = PBXGroup;
+			children = (
+				D9B5702CEB69C57B4D2109B5 /* Lockscape */,
+				B25590A7FA44B8FF24002EA9 /* LockscapeTests */,
+				AF4D36EE9894A1582F76CFE6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		09638BD1A7D866E53DF9423A /* LockscapeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26467890973B3E418719C409 /* Build configuration list for PBXNativeTarget "LockscapeTests" */;
+			buildPhases = (
+				9BCEDB8FC8E563A278E58824 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3D7148D002297801415E810 /* PBXTargetDependency */,
+			);
+			name = LockscapeTests;
+			packageProductDependencies = (
+			);
+			productName = LockscapeTests;
+			productReference = F5C4DCEE20C9E343907EA1E9 /* LockscapeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7DEB23B86BED21A3532783E7 /* Lockscape */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F90B0D9E1372DC2312748FEB /* Build configuration list for PBXNativeTarget "Lockscape" */;
+			buildPhases = (
+				6412BEA69451F67DD21FC19D /* Sources */,
+				CEB097C0A93FEF392D16A3DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lockscape;
+			packageProductDependencies = (
+			);
+			productName = Lockscape;
+			productReference = 07AEFFCCC84258FA13FF3573 /* Lockscape.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		82664908EA57F97C20E336DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					09638BD1A7D866E53DF9423A = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					7DEB23B86BED21A3532783E7 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 7EAFA443DEF8AC49E88FC822 /* Build configuration list for PBXProject "Lockscape" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = FBCB26CAD404AFDE57714602;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = AF4D36EE9894A1582F76CFE6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7DEB23B86BED21A3532783E7 /* Lockscape */,
+				09638BD1A7D866E53DF9423A /* LockscapeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEB097C0A93FEF392D16A3DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				054A990F49A63E70418189DE /* AppIcon.icon in Resources */,
+				9D567E2E89505144FE5B41F0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6412BEA69451F67DD21FC19D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6246C8BF0328D17EEBBCB48E /* LockWatcher.swift in Sources */,
+				E0E1A3724EE8003C26ED25D9 /* LoginItem.swift in Sources */,
+				8A7347BE2B3B27329C38B571 /* Settings.swift in Sources */,
+				A317B11420C96186C8498EA9 /* StatusMenu.swift in Sources */,
+				A098ED438D18D9A37A3D2B00 /* WallpaperSwapper.swift in Sources */,
+				915DE075634BD4FF6AB13C2C /* WallpaperSystem.swift in Sources */,
+				CDF450C35DC76993105F251A /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BCEDB8FC8E563A278E58824 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98EDAADDB232CA6750487301 /* WallpaperSwapperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A3D7148D002297801415E810 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7DEB23B86BED21A3532783E7 /* Lockscape */;
+			targetProxy = 208EEF5491F8C93FF4E382B3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1A1BC4F4DB250D85B34A9F9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sindisekkas.lockscape.tests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lockscape.app/Contents/MacOS/Lockscape";
+			};
+			name = Release;
+		};
+		67690BF4BC6F79FDFAA048D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5;
+			};
+			name = Debug;
+		};
+		7D7AF43CAFD57D573A40E7E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Lockscape/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sindisekkas.lockscape;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C7BC486BB60A606BE091A40D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sindisekkas.lockscape.tests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lockscape.app/Contents/MacOS/Lockscape";
+			};
+			name = Debug;
+		};
+		DBB80B2F2CD44BC82DAFCD14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5;
+			};
+			name = Release;
+		};
+		DD66D719D60EACBB07EA7C68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Lockscape/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sindisekkas.lockscape;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26467890973B3E418719C409 /* Build configuration list for PBXNativeTarget "LockscapeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7BC486BB60A606BE091A40D /* Debug */,
+				1A1BC4F4DB250D85B34A9F9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7EAFA443DEF8AC49E88FC822 /* Build configuration list for PBXProject "Lockscape" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67690BF4BC6F79FDFAA048D9 /* Debug */,
+				DBB80B2F2CD44BC82DAFCD14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F90B0D9E1372DC2312748FEB /* Build configuration list for PBXNativeTarget "Lockscape" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD66D719D60EACBB07EA7C68 /* Debug */,
+				7D7AF43CAFD57D573A40E7E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 82664908EA57F97C20E336DB /* Project object */;
+}

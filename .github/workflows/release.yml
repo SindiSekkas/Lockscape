@@ -1,0 +1,29 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Build
+        run: |
+          xcodebuild -project Lockscape.xcodeproj -scheme Lockscape -configuration Release \
+            -derivedDataPath build/DerivedData -quiet \
+            MARKETING_VERSION="${GITHUB_REF_NAME#v}" build
+      - name: Package
+        run: |
+          brew install create-dmg
+          scripts/make-dmg.sh build/DerivedData/Build/Products/Release/Lockscape.app "${GITHUB_REF_NAME#v}"
+      - name: Publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" build/Lockscape-*.dmg \
+            --title "Lockscape ${GITHUB_REF_NAME#v}" --generate-notes

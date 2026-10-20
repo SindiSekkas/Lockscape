@@ -1,0 +1,13 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Build and run unit tests
+        run: xcodebuild -project Lockscape.xcodeproj -scheme Lockscape -destination 'platform=macOS' test
