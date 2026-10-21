@@ -25,6 +25,17 @@ enum Settings {
         set { defaults.set(newValue, forKey: "enabled") }
     }
 
+    static var keepScreenOn: KeepScreenOn {
+        get { KeepScreenOn(rawValue: defaults.integer(forKey: "keepScreenOn")) ?? .off }
+        set { defaults.set(newValue.rawValue, forKey: "keepScreenOn") }
+    }
+
+    /// Off by default: on battery the lock screen goes dark as usual.
+    static var keepScreenOnBattery: Bool {
+        get { defaults.bool(forKey: "keepScreenOnBattery") }
+        set { defaults.set(newValue, forKey: "keepScreenOnBattery") }
+    }
+
     /// Set once the first launch has offered the login item, so a user who turned it off stays in charge.
     static var loginItemOffered: Bool {
         get { defaults.bool(forKey: "loginItemOffered") }

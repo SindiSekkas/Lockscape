@@ -6,6 +6,10 @@ Since Sonoma the lock screen mirrors the desktop wallpaper. Lockscape is a menu 
 that swaps the desktop wallpaper to your picture the moment the screen locks and puts
 the original back on unlock. No sudo, no system files, SIP untouched. macOS 14+.
 
+It can also keep the lock screen lit for up to an hour, or until you unlock, instead of
+the 30 seconds macOS allows. By default only on the power adapter; it never holds the
+display below 20% battery, and closing the lid still puts the Mac to sleep.
+
 ## Install
 
 Download the `.dmg` from [Releases](https://github.com/SindiSekkas/Lockscape/releases),

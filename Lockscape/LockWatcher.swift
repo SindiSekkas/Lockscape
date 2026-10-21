@@ -1,3 +1,4 @@
+import CoreGraphics
 import Foundation
 
 /// Forwards loginwindow's lock and unlock notifications.
@@ -16,6 +17,12 @@ final class LockWatcher: NSObject {
                            object: nil, suspensionBehavior: .deliverImmediately)
         center.addObserver(self, selector: #selector(screenUnlocked), name: Settings.unlockNotification,
                            object: nil, suspensionBehavior: .deliverImmediately)
+    }
+
+    /// True while the lock screen is up, e.g. when the app is relaunched during a lock.
+    static var isScreenLocked: Bool {
+        let session = CGSessionCopyCurrentDictionary() as? [String: Any]
+        return session?["CGSSessionScreenIsLocked"] as? Bool ?? false
     }
 
     @objc private func screenLocked() { onLock() }

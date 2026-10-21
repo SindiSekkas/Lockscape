@@ -28,6 +28,10 @@ final class StatusMenu: NSObject, NSMenuDelegate {
         menu.addItem(withTitle: "Choose Desktop Image…", action: #selector(chooseDesktopImage), keyEquivalent: "").target = self
         menu.addItem(.separator())
 
+        let keepOn = menu.addItem(withTitle: "Keep Lock Screen On", action: nil, keyEquivalent: "")
+        keepOn.submenu = keepScreenOnMenu()
+        menu.addItem(.separator())
+
         let enabled = menu.addItem(withTitle: "Enabled", action: #selector(toggleEnabled), keyEquivalent: "")
         enabled.target = self
         enabled.state = Settings.isEnabled ? .on : .off
@@ -38,6 +42,29 @@ final class StatusMenu: NSObject, NSMenuDelegate {
 
         menu.addItem(.separator())
         menu.addItem(withTitle: "Quit Lockscape", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q")
+    }
+
+    private func keepScreenOnMenu() -> NSMenu {
+        let menu = NSMenu()
+        for option in KeepScreenOn.allCases {
+            let item = menu.addItem(withTitle: option.title, action: #selector(chooseKeepScreenOn(_:)), keyEquivalent: "")
+            item.target = self
+            item.tag = option.rawValue
+            item.state = Settings.keepScreenOn == option ? .on : .off
+        }
+        menu.addItem(.separator())
+        let battery = menu.addItem(withTitle: "Also on Battery", action: #selector(toggleKeepOnBattery), keyEquivalent: "")
+        battery.target = self
+        battery.state = Settings.keepScreenOnBattery ? .on : .off
+        return menu
+    }
+
+    @objc private func chooseKeepScreenOn(_ item: NSMenuItem) {
+        Settings.keepScreenOn = KeepScreenOn(rawValue: item.tag) ?? .off
+    }
+
+    @objc private func toggleKeepOnBattery() {
+        Settings.keepScreenOnBattery.toggle()
     }
 
     @objc private func chooseLockImage() {

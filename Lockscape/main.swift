@@ -48,9 +48,16 @@ if !Settings.isIntegrationTest,
 }
 
 let swapper = WallpaperSwapper()
+let keeper = LockScreenKeeper()
 let statusMenu = StatusMenu(swapper: swapper)
-let lockWatcher = LockWatcher(onLock: swapper.lock, onUnlock: swapper.unlock)
+let lockWatcher = LockWatcher(
+    onLock: { swapper.lock(); keeper.screenLocked() },
+    onUnlock: { swapper.unlock(); keeper.screenUnlocked() })
 
-swapper.restoreIfNeeded() // crashed or shut down while locked?
+if LockWatcher.isScreenLocked {
+    keeper.screenLocked() // relaunched during a lock: the unlock will restore the desktop
+} else {
+    swapper.restoreIfNeeded() // crashed or shut down while locked?
+}
 LoginItem.enableOnFirstLaunch()
 app.run()

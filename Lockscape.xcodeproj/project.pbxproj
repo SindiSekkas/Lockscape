@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		054A990F49A63E70418189DE /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = 92B12C89EC99F21B55E797FF /* AppIcon.icon */; };
+		099B9C453348EE85E6F01328 /* LockScreenKeeperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4673FAE7AC3383E9A38F3E /* LockScreenKeeperTests.swift */; };
+		4B6C5CA369BD798BCE52FB9E /* LockScreenKeeper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1DBCB77AB90B7FF6014564 /* LockScreenKeeper.swift */; };
 		6246C8BF0328D17EEBBCB48E /* LockWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC529BDFBD63C5A9D7356D0 /* LockWatcher.swift */; };
 		8A7347BE2B3B27329C38B571 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1136463C1BAF8B2AED40394 /* Settings.swift */; };
 		915DE075634BD4FF6AB13C2C /* WallpaperSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E901BD1492F85F3103A7E9 /* WallpaperSystem.swift */; };
@@ -32,10 +34,12 @@
 /* Begin PBXFileReference section */
 		07AEFFCCC84258FA13FF3573 /* Lockscape.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lockscape.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FC529BDFBD63C5A9D7356D0 /* LockWatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockWatcher.swift; sourceTree = "<group>"; };
+		3E4673FAE7AC3383E9A38F3E /* LockScreenKeeperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockScreenKeeperTests.swift; sourceTree = "<group>"; };
 		53BF4EC3F1B07CB43322D57B /* StatusMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenu.swift; sourceTree = "<group>"; };
 		630E9D84B3C82D97926935E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64A308CFEB33C15F51700827 /* WallpaperSwapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperSwapperTests.swift; sourceTree = "<group>"; };
 		73329ECE23558A03103AB661 /* LoginItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginItem.swift; sourceTree = "<group>"; };
+		8F1DBCB77AB90B7FF6014564 /* LockScreenKeeper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockScreenKeeper.swift; sourceTree = "<group>"; };
 		92B12C89EC99F21B55E797FF /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = wrapper.icon; path = AppIcon.icon; sourceTree = "<group>"; };
 		92CD0C12651BFCD1F0861215 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		A40DD29F30FCBA152262F304 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -58,6 +62,7 @@
 		B25590A7FA44B8FF24002EA9 /* LockscapeTests */ = {
 			isa = PBXGroup;
 			children = (
+				3E4673FAE7AC3383E9A38F3E /* LockScreenKeeperTests.swift */,
 				64A308CFEB33C15F51700827 /* WallpaperSwapperTests.swift */,
 			);
 			path = LockscapeTests;
@@ -69,6 +74,7 @@
 				92B12C89EC99F21B55E797FF /* AppIcon.icon */,
 				630E9D84B3C82D97926935E8 /* Assets.xcassets */,
 				A40DD29F30FCBA152262F304 /* Info.plist */,
+				8F1DBCB77AB90B7FF6014564 /* LockScreenKeeper.swift */,
 				2FC529BDFBD63C5A9D7356D0 /* LockWatcher.swift */,
 				73329ECE23558A03103AB661 /* LoginItem.swift */,
 				92CD0C12651BFCD1F0861215 /* main.swift */,
@@ -184,6 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B6C5CA369BD798BCE52FB9E /* LockScreenKeeper.swift in Sources */,
 				6246C8BF0328D17EEBBCB48E /* LockWatcher.swift in Sources */,
 				E0E1A3724EE8003C26ED25D9 /* LoginItem.swift in Sources */,
 				8A7347BE2B3B27329C38B571 /* Settings.swift in Sources */,
@@ -198,6 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				099B9C453348EE85E6F01328 /* LockScreenKeeperTests.swift in Sources */,
 				98EDAADDB232CA6750487301 /* WallpaperSwapperTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,7 +274,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -286,7 +294,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -368,7 +376,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -382,7 +390,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
